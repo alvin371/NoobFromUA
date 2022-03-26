@@ -1,13 +1,186 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-icon {
+  top: -92px;
+  right: 55px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ways {
+  display: block;
 }
+
+
+.part-vid-capt {
+  z-index: -1;
+  top: -29px;
+  left: -20px;
+}
+
+.vid-backg {
+  z-index: -1;
+  top: -20px;
+  left: -20px;
+}
+
+.vid-backg-sec {
+  z-index: -1;
+  bottom: -20px;
+  right: 50px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .vid-backg-sec {
+    z-index: -1;
+    bottom: -20px;
+    right: -20px;
+  }
+}
+
+.navbar-first {
+  color: rgb(105, 104, 104);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  position: relative;
+  padding: 15px 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar-first {
+    color: rgb(105, 104, 104);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 5px;
+    position: relative;
+  }
+}
+
+.navbar-first::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(235, 84, 84);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-first:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.navbar-text {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .navbar-text {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    padding: 15px 5px;
+    position: relative;
+  }
+}
+
+.navbar-text::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: rgb(235, 84, 84);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.navbar-text:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.kenburns-top {
+  -webkit-animation: kenburns-top 5s ease-out infinite both;
+  animation: kenburns-top 5s ease-out infinite both;
+}
+
+@-webkit-keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+
+@keyframes kenburns-top {
+  0% {
+    -webkit-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    -webkit-transform-origin: 50% 16%;
+    transform-origin: 50% 16%;
+  }
+
+  100% {
+    -webkit-transform: scale(1.25) translateY(-15px);
+    transform: scale(1.25) translateY(-15px);
+    -webkit-transform-origin: top;
+    transform-origin: top;
+  }
+}
+
+
+
+/* contoh apply ing */
+.navbar {
+  @apply flex flex-row relative;
+}
+
+/* navbar language web active */
+.nav-lang-active {
+  color: #000;
+  font-weight: 800;
+}
+
+.nav-scroll-active {
+  color: #fff;
+  font-weight: 800;
+}
+
+/* media query */
