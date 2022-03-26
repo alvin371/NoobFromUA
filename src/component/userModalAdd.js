@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion'
 import { useState } from 'react'
-import axios from 'axios'
 import swal from 'sweetalert'
 import { storage } from "./firebase-config"
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage'

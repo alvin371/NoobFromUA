@@ -3,11 +3,9 @@ import sun from './../../../assets/img/part/Sun.png'
 import Modals from './productModals'
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/splide/dist/css/splide.min.css'
-// import { useEffect } from 'react'
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
-import { motion } from 'framer-motion'
 
 
 const Product = () => {

@@ -2,7 +2,6 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import swal from "sweetalert";
-import { useState } from 'react'
 import NotificationDropdown from "./NotificationDropdown.js";
 import UserDropdown from "./UserDropdown.js";
 const Sidebar = () => {
@@ -19,13 +18,7 @@ const Sidebar = () => {
     history('/')
   }
 
-  // // // Getting Administrator Data
-  // const [isAdmin, setIsAdmin] = useState(false)
   const email = localStorage.getItem('email')
-  const token = localStorage.getItem('token')
-  // if ((email === 'admin@javaagroglobalindo.com') && (token !== null)) {
-  //   setIsAdmin(true)
-  // }
   return (
     <>
       <nav className="md:left-0 md:block md:fixed md:top-0 md:bottom-0 md:overflow-y-auto md:flex-row md:flex-nowrap md:overflow-hidden shadow-xl bg-white flex flex-wrap items-center justify-between relative md:w-64 z-10 py-4 px-6">

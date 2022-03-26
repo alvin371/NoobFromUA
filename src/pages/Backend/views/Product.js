@@ -4,7 +4,7 @@ import ModalsEdit from "../../../component/listModalsEdit.js"
 import { useState, useEffect } from 'react'
 import swal from "sweetalert"
 import axios from "axios"
-import { useNavigate, Navigate } from "react-router-dom"
+import { Navigate } from "react-router-dom"
 
 
 const Product = () => {
@@ -71,8 +71,6 @@ const Product = () => {
         fetch()
     }, [data]);
     let token = localStorage.getItem("token")
-    let navigate = useNavigate()
-
     if (token === null) {
         swal({
             icon: 'error',

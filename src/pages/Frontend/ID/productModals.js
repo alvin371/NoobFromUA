@@ -1,8 +1,5 @@
-import briket from './../../../assets/img/briket3.jpg'
+
 import { motion } from 'framer-motion'
-import { useState } from 'react'
-import { extend } from 'jquery'
-import { components } from 'react-select'
 
 const ProductModals = ({ open, img, name, desc, onClose }) => {
     if (!open) return null
