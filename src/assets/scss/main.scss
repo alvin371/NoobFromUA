@@ -1,0 +1,50 @@
+$colorWhite: white;
+
+
+
+// Tailwind Text Size
+
+$xs: 0.75rem;
+$sm: 0.875rem;
+$base: 1rem;
+$lg:1.125rem;
+
+// Line Height
+$lxs:1rem;
+$lsm:1.25rem;
+$lbase:1.5rem;
+$llg:1.75rem;
+
+.box-footer {
+    display: flex;
+    flex-direction: column;
+
+    .information-page {
+        display: flex;
+        justify-content: center;
+        font-weight: 300;
+        color: $colorWhite;
+        font-size: $xs;
+        line-height: $lxs;
+
+        button {
+            color: $colorWhite;
+        }
+
+        span {
+            color: $colorWhite;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        font-weight: 300;
+        font-size: $base;
+        line-height: $base;
+
+        p {
+            color: $colorWhite;
+        }
+    }
+}

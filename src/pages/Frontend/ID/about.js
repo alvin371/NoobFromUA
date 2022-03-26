@@ -8,7 +8,6 @@ import Founder from './../../../assets/img/user-icon.png'
 import Elsa from './../../../assets/img/elsa.jpg'
 import Revo from './../../../assets/img/revo.jpg'
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 import { Splide, SplideSlide } from '@splidejs/react-splide'

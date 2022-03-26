@@ -7,16 +7,16 @@ const footer = () => {
                         <div className="">
                             <h1 className="flex justify-center text-white font-bold text-2xl lg:ml-4">Java Agro Globalindo</h1>
                         </div>
-                        <div className="flex flex-col lg:ml-16 xl:ml-56 2xl:ml-80">
-                            <div className="flex justify-center text-white font-light text-xs md:text-sm lg:text-base mb-4">
+                        <div className="box-footer lg:ml-16 xl:ml-56 2xl:ml-80">
+                            <div className="information-page md:text-sm lg:text-base mb-4">
                                 <button href="" className="">Karir</button>
                                 <span className="px-5">|</span>
                                 <button href="">Kebijakan Privasi</button>
                                 <span className="px-5">|</span>
                                 <button href="">Syarat dan Ketentuan</button>
                             </div>
-                            <div className="flex justify-center text-white font-light text-base">
-                                Copyright ©2021 Java Agro Globalindo Inc
+                            <div className="copyright">
+                                <p>Copyright ©2021 Java Agro Globalindo Inc</p>
                             </div>
                         </div>
                     </div>
